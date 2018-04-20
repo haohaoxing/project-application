@@ -1,11 +1,9 @@
 <!--  -->
 <template>
-  <div>
-      <h1>你好啊</h1>
-  </div>
+  <div></div>
 </template>
 
-<script type='text/ecmascript-6'>
+<script>
 export default {
   data () {
     return {
@@ -14,13 +12,9 @@ export default {
 
   components: {},
 
-  computed: {},
-
-  mounted(){},
-
   methods: {}
 }
 
 </script>
-<style scoped>
+<style lang='scss' scoped>
 </style>
