@@ -6,18 +6,19 @@
         <div class="sidebarOne">
             <div class="sidebarTop">实验室专项</div>
             <ul class="sidebarBottom">
-                <li><a href="">我要申请</a></li>
-                <li><a href="">申请列表</a></li>
-                <li><a href="">购置申请表</a></li>
-                <li><a href="">采购进度</a></li>
-                <li><a href="">已购设备</a></li>
-                <li><a href="">完成项目</a></li>
+                <li><a class="addSidebar" href="javascript:;">我要申请</a></li>
+                <li><a href="javascript:;">申请列表</a></li>
+                <li><a href="javascript:;">购置申请表</a></li>
+                <li><a href="javascript:;">采购进度</a></li>
+                <li><a href="javascript:;">已购设备</a></li>
+                <li><a href="javascript:;">完成项目</a></li>
             </ul>
         </div>
     </div>
 </template>
 
 <script>
+import "../../assets/js/jquery-1.8.3.min.js";
 export default {
   data () {
     return {
@@ -25,8 +26,17 @@ export default {
   },
 
   components: {},
-
-  methods: {}
+  mounted(){
+    this.addSidebar();
+  },
+  methods: {
+    addSidebar(){
+       $(".sidebarBottom a").click(function(){
+            $(".sidebarBottom a").removeClass("addSidebar");
+            $(this).addClass("addSidebar").siblings().removeClass("addSidebar");
+         });
+    }
+  }
 }
 
 </script>
@@ -69,5 +79,8 @@ export default {
   border-top:none;
   background:#bfe1fd;
   color: #000;
+}
+.sidebarBottom .addSidebar{
+  background: #a9ecfc;
 }
 </style>

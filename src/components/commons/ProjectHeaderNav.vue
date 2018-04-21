@@ -2,18 +2,13 @@
 <template>
  <!--顶部部分-->
     <div class="header">
-        <div class="headerTop">
-            <!--左侧logo-->
-            <div class="logo"></div>
-            <!--右侧按钮-->
-            <div class="headerBtn"></div>
-        </div>
+        <project-header></project-header>
          <project-nav></project-nav>
     </div>
 </template>
 
 <script>
-//import ProjectHeader from "./ProjectHeader.vue";
+import ProjectHeader from "./ProjectHeader.vue";
 import ProjectNav from "./ProjectNav.vue";
 export default {
   data () {
@@ -22,7 +17,7 @@ export default {
   },
 
   components: {
-   //ProjectHeader,
+   ProjectHeader,
    ProjectNav
   },
 
@@ -31,5 +26,6 @@ export default {
 
 </script>
 <style scoped>
-  @import url(../../assets/css/common.css);
+  
+  
 </style>
