@@ -1,19 +1,23 @@
 <!--  -->
 <template>
     <!--侧边栏-->
+
     <div class="sidebar">
         <h1>功能菜单</h1>
         <div class="sidebarOne">
-            <div class="sidebarTop">实验室专项</div>
+            <div class="sidebarTop">申请者</div>
             <ul class="sidebarBottom">
-                <li><a class="addSidebar" href="javascript:;">我要申请</a></li>
+                <!-- <li><a class="addSidebar" href="javascript:;">我要申请</a></li>
                 <li><a href="javascript:;">申请列表</a></li>
-                <li><a href="javascript:;">购置申请表</a></li>
-                <li><a href="javascript:;">采购进度</a></li>
-                <li><a href="javascript:;">已购设备</a></li>
-                <li><a href="javascript:;">完成项目</a></li>
+                <li><a href="javascript:;">采购提交表</a></li>
+                <li><a href="javascript:;">已购设备</a></li> -->
+                <li><router-link class="addSidebar" to="/ApplyCationall">我要申请</router-link></li>
+                <li><router-link to="/BoughtUserList">申请列表</router-link></li>
+                <li><router-link to="/ProcurementProgressP">采购进度</router-link></li>
+                <li><router-link to="/BoughtEquipment">已购设备</router-link></li>
             </ul>
         </div>
+
     </div>
 </template>
 
@@ -21,6 +25,7 @@
 import "../../assets/js/jquery-1.8.3.min.js";
 export default {
   data () {
+
     return {
     };
   },
@@ -49,7 +54,7 @@ export default {
     top: 100px;
     left: 0;
     bottom: 0;
-    background: #f8f8f8;
+    background: url(../../assets/images/common/timg.jpg) repeat center;
 }
 .sidebar h1{
   /*width:100%;*/

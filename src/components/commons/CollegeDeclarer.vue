@@ -3,7 +3,7 @@
   <div>
      <!-- 用户信息 -->
             <div class="ConUser">
-                <img src="../../assets/images/H-img/r.gif"/>
+                <img src="../../assets/images/H.img/r.gif"/>
                 <a>张宇(学院申报者):你好！欢迎光临，您上次登录时间是：2015-09-20 23:15:15</a>
             </div>
   </div>
@@ -18,7 +18,8 @@ export default {
 </script>
 <style scoped>
   .section .content .ConUser {
-      width: 100%;
+      width: 99%;
+      margin: 0 auto;
       height: 25px;
       /* margin-left: 6px; */
       background: #f2f2f2;
