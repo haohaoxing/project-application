@@ -3,7 +3,7 @@
   <div>
        <!--右侧按钮-->
         <div class="headerBtn">
-            <a class="addClassStyle" href="javascript:;">重新登录</a>
+            <router-link class="addClassStyle" to="/">重新登录</router-link>
             <a href="javascript:;">密码修改</a>
             <a class="AnQuanOut" href="javascript:;">安全退出</a>
             <a href="javascript:;">操作指南</a>
@@ -11,7 +11,7 @@
         <!-- 退出弹出框 -->
         <div class="Qout">
             <h1>你确定要退出吗？</h1>
-            <a href="javascript:;">确定</a>
+             <router-link to="/">确定</router-link>
             <a class="QuXiao" href="javascript:;">取消</a>
         </div>
   </div>
